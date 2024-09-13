@@ -1,0 +1,6 @@
+Pintar la tabla de multiplicar de un numero
+
+Pintar las tablas de multiplicar de los numeros del 1-10
+
+Mostrar los 10 primeros números de la Serie de Fibonacci
+0,1,1,2,3,5,8,13
