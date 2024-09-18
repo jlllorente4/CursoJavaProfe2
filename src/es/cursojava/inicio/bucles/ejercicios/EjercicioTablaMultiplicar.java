@@ -7,7 +7,7 @@ public class EjercicioTablaMultiplicar {
 		
 		int numero = 8;
 		for (int i=1 ; i<=10 ; i++) {
-			System.out.println(i + "X" + numero + "=" + (i*numero));
+			System.out.println(i + " X " + numero + " = " + (i*numero));
 		}
 		
 		
