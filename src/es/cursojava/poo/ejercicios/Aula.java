@@ -29,7 +29,7 @@ public class Aula {
 		Aula aula1 = new Aula();
 		aula1.pintaDatosAlumnosAprobados(alumnos);
 		
-		System.out.println(alumnos[0].getNombre());
+		System.out.println(alumnos[0]);
 		
 		
 		Alumno.contador=6;
