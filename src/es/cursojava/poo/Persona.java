@@ -12,12 +12,27 @@ public class Persona {
 //		
 //	}
 	
+	public Persona (String nombre, String apellidos, String dni) {
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.dni = dni;
+	}
+	
 	public Persona (String nombre, String apellidos, String dni, int edad) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.dni = dni;
 		this.edad = edad;
 	}
+	
+	public Persona (String nombre, String apellidos) {
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+	}
+	
+
+
+	
 	
 	// Métodos Getter y Setter
 	public String getNombre() {

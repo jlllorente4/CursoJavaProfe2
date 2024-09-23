@@ -5,6 +5,9 @@ public class PistaAtletismo {
 	public static void main(String[] args) {
 		String texto = "Hola";
 		
+		
+		Persona p0 = new Persona("N0","A0");
+		
 		Persona persona0 = new Persona("N1","A1","1111A",36);
 		//System.out.println(persona0.getNombre());
 		

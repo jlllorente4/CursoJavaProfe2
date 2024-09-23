@@ -1,0 +1,32 @@
+clase Alumno
+	+ nombre
+	+ dni
+	+ nota
+	+ mayorEdad
+	
+	3 constructores
+		1 vacio
+		1 se inicializan nombre y dni
+		1 se inicializan todas las variables
+	
+	getter y setter
+	
+	verNota()
+		si el alumno es mayor de edad 
+			=0 --> el alumno no ha estudiado nada
+			<5 --> el alumno ha estudiado poco
+			<9 --> el alumno ha estudiado mucho
+			<=10 --> el alumno es un genio
+		en caso contrario 
+			--> no tiene permisos para ver la nota
+			
+Aula
+	main()
+		Crear 3 alumnos usando los 3 constructores disponibles (todos los datos)
+		Llamar al método verNota de cada alumno
+		
+		
+		+ (Avanzado) Meter a los 3 alumnos en 1 array y a partir del array mostrar el nombre y apellidos de los alumnos aprobados
+		
+	
+		
