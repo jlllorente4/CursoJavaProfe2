@@ -26,7 +26,8 @@ Aula
 		Llamar al método verNota de cada alumno
 		
 		
-		+ (Avanzado) Meter a los 3 alumnos en 1 array y a partir del array mostrar el nombre y apellidos de los alumnos aprobados
+		+ (Avanzado) Meter a los 3 alumnos en 1 array y 
+		a partir del array mostrar el nombre y apellidos de los alumnos aprobados
 		
 	
 		
