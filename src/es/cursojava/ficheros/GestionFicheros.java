@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,7 +20,8 @@ public class GestionFicheros {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String contenidoFichero = leerArchivo("fichero.txt");
+		//crearArchivo2("fichero.txt");
+		String contenidoFichero = leerArchivo("fichero_datos.txt");
 		System.out.println(contenidoFichero);
 	}
 
@@ -28,15 +30,15 @@ public class GestionFicheros {
 		
 //		BufferedWriter buffer2 = null;
 //		try {
-//			FileWriter fw = new FileWriter(archivo, false);
+//			FileWriter fw = new FileWriter(archivo, true);
 //			buffer2 = new BufferedWriter(fw);
 //
 //			buffer2.append("Hola que tal amigos!\n")
 //			.append("Todo bien? yo escribiendo en un archivo...\n")
-//			.append("Hasta luego Lucas!\n");
+//			.append("Hasta luego Lucas3!\n");
 //
 //		}catch(IOException ioe) {
-//			System.out.println("Error");
+//			System.out.println("Error" + ioe.getMessage());
 //		}finally {
 //			try {
 //				buffer2.close();
@@ -45,7 +47,7 @@ public class GestionFicheros {
 //				e.printStackTrace();
 //			}
 //		}
-		
+//		System.out.println("Fichero creado");
 	
 		
 		//Try with resources
@@ -53,7 +55,7 @@ public class GestionFicheros {
 
 			buffer.append("Hola que tal amigos!\n")
 					.append("Todo bien? yo escribiendo en un archivo...\n")
-					.append("Hasta luego Lucas!\n");
+					.append("Hasta luego Lucas4!\n");
 			// buffer.close();
 			System.out.println("El archivo se ha creado con éxito!");
 		} catch (IOException e) {
@@ -91,12 +93,18 @@ public class GestionFicheros {
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))){
 
             String linea;
+            
             while ( (linea = reader.readLine()) != null){
+            	String[] datos = linea.split(";");
+            	Alumno alumno = new Alumno(datos[0],datos[1]);
+            	System.out.println("Alumno: "+ alumno.getNombre() + " " + alumno.getDni());
                 sb.append(linea).append("\n");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+        	System.out.println("Error " + e.getMessage());
+            //e.printStackTrace();
         }
+        System.out.println("Fin");
 		return sb.toString();
 	}
 
