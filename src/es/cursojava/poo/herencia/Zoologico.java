@@ -21,6 +21,7 @@ public class Zoologico {
 		Animal [] animales = {vaca1,vaca2,leon1,serpiente1};
 		for (Animal animal : animales) {
 			animal.beber();
+			animal.comer();
 			
 			if(animal instanceof Vaca) {
 				//Hacer un cast

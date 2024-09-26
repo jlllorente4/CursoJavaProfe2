@@ -6,7 +6,7 @@ public class EjemploExcepciones {
 
 	public static void main(String[] args) {
 		
-		Alumno alumno = new Alumno();
+		Alumno alumno = null;
 		int[] numeros = {10,20,30};
 		
 		try {
@@ -19,8 +19,8 @@ public class EjemploExcepciones {
 		try {
 			System.out.println("entra");
 			
-			//System.out.println(alumno.getNombre().toUpperCase());
-			//System.out.println(numeros[3]);
+			System.out.println(alumno.getNombre().toUpperCase());
+			System.out.println(numeros[3]);
 			int resultado = 7/0;
 		}catch(ArrayIndexOutOfBoundsException aiobe) {
 			System.out.println("Se ha intentado acceder a una posición de un array que no existe" + aiobe.getMessage());
@@ -36,7 +36,7 @@ public class EjemploExcepciones {
 
 	}
 
-	private static void metodo1 () throws MiExcepcion{
+	private static void metodo1 () throws MiExcepcion {
 		if (Math.random()>0.5) {
 			MiExcepcion me  = new MiExcepcion("Error propio crerado por mi");
 			
